@@ -1,25 +1,48 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+/*function Myname() {
+   
+  ---- Jsx with ES6
+  const colors = ["red", "blue", "green"];
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    
+    <div>
+      <ul>
+        {colors.map((color) => {
+          return <li> {color}</li>;
+        })}
+      </ul>
     </div>
   );
-}
 
+  ---- Conditions 
+  const firstname = prompt("enter your first name : ");
+  
+
+  return (
+    <div>
+      <h1>Hello {firstname ? firstname : "annonyous"}</h1>
+      <p>it looks like {firstname ? "have " : "don't  have "}a name</p>
+      {!firstname && (
+        <form>
+          <p> Type your name here </p>
+          <input type="text" />
+        </form>
+      )}
+    </div>
+  );
+  return (
+    <>
+      <div>hello</div>
+    </>
+  );
+}
+export default Myname;
+*/
+import React from "react";
+const App = () => {
+  return (
+    <React.Fragment style={{ color: "red", backGround: "red" }}>
+      <h2>Hello from my first component !!</h2>
+    </React.Fragment>
+  );
+};
 export default App;
